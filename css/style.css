@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #48555B;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 941px;
+    margin: 0 auto;
+}
+/*header-banner*/
+header {
+    height: 769px;
+    background-image: url(/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+}
+.header-container {
+    height: 769px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 41px;
+    padding-bottom: 71px;
+}
+.heading h1 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 5.71px;
+    color: #ffffff;
+}
+.heading h3 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+}
+.down-button {  
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 3.7px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.down-button:hover, .down-button:focus, .down-button:active {
+    animation: down-button 1s linear  infinite;
+}
+/*top-nav*/
+
+nav {
+    margin-top: 13px;
+    border-top: 2px solid #E6E6E6;
+    border-bottom: 2px solid #E6E6E6;
+    
+}
+.nav-container {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-container ul {
+    display: flex;
+    list-style-type: none;
+}
+.nav-container ul li {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.09px;  
+    margin-right: 48px;
+}
+.nav-container ul li:last-child {
+    margin-right: 0;
+}
+.nav-container ul li a {
+    text-decoration: none;
+    text-shadow: -0.06ex 0 transparent, 0.06ex 0 ;
+    transition: 0.3s;
+}
+.nav-container ul li a:hover, .nav-container ul li a:focus, .nav-container ul li a:active {
+    color: #00A4E5;
+    text-shadow: -0.06ex 0 #00A4E5, 0.06ex 0 #00A4E5;
+}
+/* About */
+
+.about {
+    margin-top: 58px;
+}
+.about-heading {
+    text-align: center;
+}
+h2 {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2.31px;
+    text-transform: uppercase;
+}
+hr {
+    border: 2px solid #00A4E5;
+    width: 50px;
+    margin: 10px auto;
+}
+.about-container {
+    display: flex;
+    margin-top: 84px;
+    justify-content: space-between;
+}
+.about-text h4{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.about-text h4 span {
+    color: #16ACE8;
+}
+.about-text p{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.19px;
+    line-height: 23px;
+}
+
+
+
+.about-cards {
+    display: flex;
+    align-items: flex-end;
+}
+.about-cards div {
+    width: 140px;
+    height: 224px;
+    margin-right: 20px;
+}
+.about-cards div:last-child {
+    width: 140px;
+    height: 224px;
+    margin-right: 0;
+}
+.about-cards div h3 {
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 0.19px;
+    line-height: 29px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 14px;
+    padding-left: 14px;
+}
+.we-plan {
+    background-image: url(/img/Plan.png);
+}
+.we-manage {
+    background-image: url(/img/Manage.png);
+}
+.we-build {
+    background-image: url(/img/Build.png);
+}
+/*Services*/
+
+.services {
+    margin-top: 118px;
+}
+.services-top {
+    display: flex;
+    justify-content: space-between;
+}
+.services-top hr {
+    margin-left: 0;
+}
+.services-top p {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    line-height: 19px;
+}
+.button {
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 11px 29px;
+    background-color: #00A4E5;
+    text-transform: uppercase;
+
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #E6E6E6;
+    height: 4px;
+
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.button:hover:before, .button:focus:before, .button:active:before {
+    right: 0;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 78px;
+    margin-bottom: 115px;
+}
+.services-card {
+    border: 2px solid #E6E6E6;
+    padding: 39px 23px;
+
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+
+}
+.services-card:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+.services-card h4 {
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.43px;
+    line-height: 24px;
+}
+.services-card p {
+    padding-top: 13px;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.19px;
+    line-height: 23px;
+}
+
+/* Get in touch */
+.getin {
+    height: 499px;
+    background-image: url(/img/bg-footer.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.getin-container {
+    padding-top: 130px;
+    text-align: center;
+}
+.getin-container h3 { 
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.15px;
+    line-height: 36px;
+    margin-bottom: 35px;
+}
+/* News letter */
+.newslet {
+    background-color: #171819;
+}
+.newslet-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.newslet-container h3 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.85px;
+    color: #fff;
+}
+.form {
+    display: flex;
+    justify-content: center;
+}
+.form input {
+    font-size: 14px;
+    padding: 10px 98px 10px 16px;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #141A20;
+    height: 240px;
+}
+/* Copyright */
+.copy {
+    background-color: #171819;
+}
+.copy p{
+    padding: 22px 0;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+    color: #fff;
+}
+
+
+
+/*Animations*/
+@keyframes down-button {
+    25% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+}

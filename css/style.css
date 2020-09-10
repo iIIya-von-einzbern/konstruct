@@ -18,7 +18,7 @@ h1 {
 /*header-banner*/
 header {
     height: 769px;
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -160,13 +160,13 @@ hr {
     padding-left: 14px;
 }
 .we-plan {
-    background-image: url(/img/Plan.png);
+    background-image: url(../img/Plan.png);
 }
 .we-manage {
-    background-image: url(/img/Manage.png);
+    background-image: url(../img/Manage.png);
 }
 .we-build {
-    background-image: url(/img/Build.png);
+    background-image: url(../img/Build.png);
 }
 /*Services*/
 
@@ -242,7 +242,7 @@ hr {
 /* Get in touch */
 .getin {
     height: 499px;
-    background-image: url(/img/bg-footer.png);
+    background-image: url(../img/bg-footer.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

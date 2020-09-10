@@ -74,26 +74,24 @@ nav {
 }
 .nav-container ul {
     display: flex;
-    list-style-type: none;
 }
-.nav-container ul li {
+.menu li {
+    list-style-type: none;
     font-weight: 600;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1.09px;  
     margin-right: 48px;
 }
-.nav-container ul li:last-child {
+.menu li:last-child {
     margin-right: 0;
 }
-.nav-container ul li a {
+.menu li a {
     text-decoration: none;
-    text-shadow: -0.06ex 0 transparent, 0.06ex 0 ;
     transition: 0.3s;
 }
-.nav-container ul li a:hover, .nav-container ul li a:focus, .nav-container ul li a:active {
+.menu li a:hover, .menu li a:focus, .menu li a:active {
     color: #00A4E5;
-    text-shadow: -0.06ex 0 #00A4E5, 0.06ex 0 #00A4E5;
 }
 /* About */
 
@@ -196,28 +194,15 @@ hr {
     background-color: #00A4E5;
     text-transform: uppercase;
 
-    transform: perspective(1px) translateZ(0);
-    overflow: hidden;
-    position: relative;
     cursor: pointer;
-}
-.button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    background: #E6E6E6;
-    height: 4px;
-
-    transition-property: right;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+    box-shadow: inset 0 0 0 4px #00A4E5, 0 0 1px rgba(0, 0, 0, 0);
+    transition: 0.3s;
 }
 
-.button:hover:before, .button:focus:before, .button:active:before {
-    right: 0;
+.button:hover, .button:focus, .button:active {
+    background-color: #fff;
+    color: #00A4E5;
+    box-shadow: inset 0 0 0 4px #00A4E5, 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .services-cards {
@@ -300,8 +285,67 @@ hr {
 /* Footer */
 footer {
     background-color: #141A20;
-    height: 240px;
 }
+.footer-container {
+    padding-top: 19px;
+    padding-bottom: 49px;
+    display: flex;
+    justify-content: space-between;
+}
+h5 {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.85px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.company p{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19px;
+    color: #fff;
+}
+.links-container {
+    display: flex;
+}
+.links-container ul li a {
+    line-height: 25px;
+    color: #fff;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    color: #fff;
+}
+.socials ul {
+    display: flex;
+    list-style-type: none;
+}
+.socials ul li {
+    margin-right: 25px;
+}
+.socials ul li:last-child {
+    margin-right: 0;
+}
+.socials ul li a i {
+    color: #fff;
+    transition: 0.3s;
+}
+.socials ul li a i:hover {
+    transform: scale(1.5);
+    color: #00A4E5;
+}
+
+
 /* Copyright */
 .copy {
     background-color: #171819;
